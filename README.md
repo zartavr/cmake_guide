@@ -1,5 +1,7 @@
 # Cmake guide
 
+[Github](https://github.com/zartavr/cmake_guide)
+
 ## Профиты CMake
 
 - Описание сборки в одном месте (всё в нескольких `CMakeLists.txt`, разбросанных по проекту)
