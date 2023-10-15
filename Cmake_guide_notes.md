@@ -111,7 +111,7 @@ set_target_properties(target PROPERTIES prop1 prop2)
 `Makefile` или налогичный инструкции для сборки проекта сгенерированные выбранным генератором постредством Cmake
 
 
-## Example 2
+## Example 3
 
 ```cmake
 configure_file(config.h.in ${CMAKE_CURRENT_BINARY_DIR}/conig.h)
@@ -136,7 +136,7 @@ include_directories(configure PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 PRIVATE - PUBLIC - INTERFACE
 Разные режимы прокидывания зависимостей между таргетами разных уровней
 
-## Example 3
+## Example 4
 
 ```cmake
 add_subdirectory(src)
@@ -156,7 +156,7 @@ target_link_libraries(main_app lib)
 
 Cmake анализирует зависимости между таргетами и собирает подпроекты в нужном порядке.
 
-## Example 4
+## Example 5
 ```
 find_package(lib CONFIG REQUIRED)
 ```
@@ -167,7 +167,7 @@ find_package(lib CONFIG REQUIRED)
 target_link_libraries(main lib)
 ```
 
-## Example 5 
+## Example 6
 Пример для использования самописного модуля для поиска библиотек без инструкций для их сборки
 
 скрипт Findlib.cmake
@@ -188,7 +188,7 @@ PATH_SUFFIXES lib
 NO_DEFAULT_PATH)
 ```
 
-## Example 6
+## Example 7
 
 ```
 option(OPTION_NAME "msg" OFF/ON)
@@ -196,7 +196,7 @@ option(OPTION_NAME "msg" OFF/ON)
 
 Использовать в CMake
 
-## Example 7
+## Example 8
 
 ```
 target_compile_feature(target Private feature1 feature2)
